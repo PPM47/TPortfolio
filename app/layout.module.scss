@@ -1,0 +1,27 @@
+@import "@styles/common.scss";
+
+.dev_con {
+    width: 100%;
+    border-top: 1px var(--color-base-200) solid;
+}
+.nav_con {
+    width: 100%;
+    height: 5.5rem;
+}
+.homepage_grid {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem; 
+    .item {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 200px; 
+        @include large-break {
+            flex: 1 1 100%; 
+        }
+    }
+
+   
+   
+}

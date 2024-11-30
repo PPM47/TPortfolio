@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/kimberly-signature");
+@import "@styles/common.scss";
+
+// @include df_row(flex-end, center, 1rem, nowrap);
+// @include position(absolute, auto, 0, -0.5rem, 0);
+
+.home_section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(6, fit-content);
+
+    // row-gap: 3rem;
+    grid-template-areas:
+        "nav_spaser heroSection"
+        "nav_spaser aboutSection"
+        "nav_spaser skillsSection"
+        "nav_spaser educationSection"
+        "nav_spaser projectSection"
+        "nav_spaser contactSection"
+        ;
+
+    @include small-break {
+        grid-template-columns: 80px 1fr;
+    }
+    @include extra-small-break {
+        grid-template-columns: 65px 1fr;
+    }
+    .background_def{
+        @include position(fixed, 0, auto, auto, 0);
+        width: 100%;
+        height: 100%;
+        z-index: -9;
+      background-color: var(--color-base-df0);
+    }
+    .background_con{
+        width: 100%;
+        @include position(fixed, 0%, auto, auto, 0%);
+        @include df_row(space-between, flex-start, 0rem, wrap);
+        // border: solid 1px var(--color-base-700);
+        background-color: var(--color-base-500);
+        z-index: -10;
+        :root[data-theme="dark"] & {
+            // Dark mode image
+            background-color: var(--color-base-50);
+       }
+        .background_1{
+            content: url("/image/bg1.webp");
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            object-position: top;
+           
+            // border: solid 1px var(--color-base-700);
+
+        }
+        .background_2{
+            content: url("/image/bg2.webp");
+            width: 100%;
+            max-width: 1000px;
+            height: 100%;
+            background-repeat: no-repeat;
+            object-fit: fill;
+            object-position: top;
+           
+            // border: solid 1px var(--color-base-700);
+        }
+    }
+    .heroSection {
+        grid-area: heroSection;
+
+        // padding: .5rem;
+    }
+    .aboutSection {
+        grid-area: aboutSection;
+        padding-left: 8%;
+        @include mid-break {
+            padding-left: 0%;
+        }
+    }
+    .skillsSection {
+        grid-area: skillsSection;
+        padding-right: 8%;
+        padding-bottom: 5%;
+        @include mid-break {
+            padding-right: 0%;
+        }
+
+        // padding: .5rem;
+    }
+    .contactSection {
+        width: 100%;
+        grid-area: contactSection;
+        padding-left: 8%;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mid-break {
+            padding-left: 0%;
+        }
+    }
+    .educationSection {
+        grid-area: educationSection;
+        width: 100%;
+        padding-left: 8%;
+        padding-bottom: 4%;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mid-break {
+            padding-left: 0%;
+        }
+    }
+    .projectSection{
+        grid-area: projectSection;
+        width: 100%;
+        padding-left: 8%;
+        padding-bottom: 4%;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mid-break {
+            padding-left: 0%;
+        }
+    }
+    .nav_spaser {
+        grid-area: nav_spaser;
+        @include extra-small-break {
+            // width: 70px;
+        }
+    }
+}

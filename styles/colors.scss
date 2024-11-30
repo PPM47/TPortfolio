@@ -1,0 +1,81 @@
+:root{
+  /* Light mode - Base colors start with white and progress to black */
+  --color-base-0: rgb(255, 255, 255); /* Pure white */
+  --color-base-50: #f5f5f5;
+  --color-base-100: rgb(235, 235, 235);
+  --color-base-150: rgb(221, 221, 221);
+  --color-base-200: rgb(208, 208, 208);
+  --color-base-250: rgb(195, 195, 195);
+  --color-base-300: rgb(181, 181, 181);
+  --color-base-350: rgb(168, 168, 168);
+  --color-base-400: rgb(154, 154, 154);
+  --color-base-450: rgb(141, 141, 141);
+  --color-base-500: rgb(128, 128, 128); /* Mid gray */
+  --color-base-550: rgb(114, 114, 114);
+  --color-base-600: rgb(101, 101, 101);
+  --color-base-650: rgb(87, 87, 87);
+  --color-base-700: rgb(74, 74, 74);
+  --color-base-750: rgb(60, 60, 60);
+  --color-base-800: rgb(47, 47, 47);
+  --color-base-850: rgb(34, 34, 34);
+  --color-base-900: rgb(0, 0, 0); /* Pure black */
+--color-base-df0: rgba(255, 255, 255, 0.446); 
+  --text--black-1: rgb(34, 34, 34); 
+  --transparent:rgba(0, 0, 0, 0); /* Black text for light background */
+}
+
+:root[data-theme="light"] {
+  /* Light mode - Base colors start with white and progress to black */
+  --color-base-0: rgb(255, 255, 255); /* Pure white */
+  --color-base-50: #f5f5f5;
+  --color-base-100: rgb(235, 235, 235);
+  --color-base-150: rgb(221, 221, 221);
+  --color-base-200: rgb(208, 208, 208);
+  --color-base-250: rgb(195, 195, 195);
+  --color-base-300: rgb(181, 181, 181);
+  --color-base-350: rgb(168, 168, 168);
+  --color-base-400: rgb(154, 154, 154);
+  --color-base-450: rgb(141, 141, 141);
+  --color-base-500: rgb(128, 128, 128); /* Mid gray */
+  --color-base-550: rgb(114, 114, 114);
+  --color-base-600: rgb(101, 101, 101);
+  --color-base-650: rgb(87, 87, 87);
+  --color-base-700: rgb(74, 74, 74);
+  --color-base-750: rgb(60, 60, 60);
+  --color-base-800: rgb(47, 47, 47);
+  --color-base-850: rgb(34, 34, 34);
+  --color-base-900: rgb(0, 0, 0); /* Pure black */
+  --color-base-df0: rgba(255, 255, 255, 0.71); 
+  --text--black-1: rgb(34, 34, 34); /* Black text for light background */
+}
+
+:root[data-theme="dark"] {
+  /* Dark mode - Base colors start with black and progress to white */
+  --color-base-0: #222222; /* Pure black */
+  --color-base-50: rgb(7, 7, 7);
+  --color-base-100: rgb(20, 20, 20);
+  --color-base-150: rgb(34, 34, 34);
+  --color-base-200: rgb(47, 47, 47);
+  --color-base-250: rgb(60, 60, 60);
+  --color-base-300: rgb(74, 74, 74); 
+  --color-base-350: rgb(87, 87, 87); 
+  --color-base-400: rgb(101, 101, 101);
+  --color-base-450: rgb(114, 114, 114);
+  --color-base-500: rgb(128, 128, 128); /* Mid gray */
+  --color-base-550: rgb(141, 141, 141);
+  --color-base-600: rgb(154, 154, 154);
+  --color-base-650: rgb(168, 168, 168);
+  --color-base-700: rgb(181, 181, 181);
+  --color-base-750: rgb(195, 195, 195);
+  --color-base-800: rgb(208, 208, 208);
+  --color-base-850: rgb(221, 221, 221);
+  --color-base-900: rgb(255, 255, 255); /* Pure white */
+  --color-base-df0: rgba(0, 0, 0, 0.446); 
+  --text--black-1: rgb(243, 243, 243); 
+  --transparent:rgba(0, 0, 0, 0);  /* White text for dark background */
+}
+
+:root {
+  --page-max-width-1200--: 1320px;
+  --border-radius--: 2.2rem;
+}

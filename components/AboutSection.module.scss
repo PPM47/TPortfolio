@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/kimberly-signature");
+@import "@styles/common.scss";
+
+// @include df_row(flex-end, center, 1rem, nowrap);
+// @include position(absolute, 0, auto, auto, 0);
+// @include position(relative, auto, auto, auto, auto);
+
+.aboutSection {
+    width: 100%;
+    // min-height: 98vh;
+    padding: 1rem;
+
+    background-color: var(--transparent);
+    @include df_column(center, flex-start, 2.5rem, wrap);
+    // border: solid 1px var(--color-base-600);
+    // transform: translateX(0) translateY(-100px);
+    // @include large-break {
+    //     transform: translateX(0) translateY(-40px);
+    // }
+    // @include mid-break {
+    //     transform: translateX(0) translateY(0);
+    // }
+
+    .about_header {
+        width: fit-content;
+        @include df_row(center, center, 2.5rem, wrap);
+        // border: solid 1px var(--color-base-600);
+        // @include mid-break {
+        //     @include df_column(center, center, 2.5rem, wrap);
+        // }
+
+        .title {
+            p {
+                font-family: "Kimberly Signature", sans-serif;
+                font-size: 5rem;
+                // line-height: 2rem;
+                color: var(--color-base-700);
+            }
+        }
+        .line_arrow {
+            @include df_row(center, center, 1rem, nowrap);
+            .line {
+                width: 100%;
+                min-width: 300px;
+                height: 2px;
+                background-color: var(--color-base-700);
+                @include large-break {
+                    min-width: 140px;
+                }
+            }
+            p {
+                font-family: "Kimberly Signature", sans-serif;
+                font-size: 5rem;
+                line-height: 2rem;
+                color: var(--color-base-700);
+            }
+        }
+    }
+    .about_text_img {
+        // border: solid 1px var(--color-base-600);
+        @include df_row(center, center, 2rem, wrap);
+
+        .about_text_con {
+            max-width: 750px;
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            shape-outside: border-box;
+            p {
+                color: var(--color-base-600);
+                shape-outside: content-box;
+                @include large-break {
+                    text-align: center;
+                }
+            }
+        }
+        .hero_image_con {
+            @include position(relative, auto, auto, auto, auto);
+            z-index: 10;
+            @include large-break {
+                display: none;
+            }
+
+            &::before {
+                content: "";
+                @include position(absolute, 50%, auto, auto, 50%);
+                transform: translateX(-50%) translateY(-50%);
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: var(--color-base-200);
+                z-index: -1;
+                transition:
+                    transform 0.3s ease,
+                    background-color 0.3s ease;
+            }
+            .hero_image_con_ {
+                width: 200px;
+                height: 200px;
+                content: url("/image/pt.webp"); // Light mode image
+                object-fit: cover;
+                object-position: top;
+                border-radius: 50%;
+                overflow: hidden;
+                border: solid 2px var(--color-base-200);
+                border-radius: 50%;
+                filter: drop-shadow(2px 1px 8px rgba(0, 0, 0, 0.3));
+                transition:
+                    transform 0.3s ease,
+                    filter 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.01);
+                    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5));
+                }
+
+                // Dark mode styling
+                :root[data-theme="dark"] & {
+                    content: url("/image/pt_d.webp"); // Dark mode image
+                    border: solid 2px var(--color-base-700);
+
+                    // Adjust background for the `::before` element in dark mode
+                    .hero_image_con::before {
+                        background-color: var(--color-base-800);
+                    }
+                }
+            }
+        }
+    }
+}

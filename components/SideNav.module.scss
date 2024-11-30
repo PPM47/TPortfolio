@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/kimberly-signature");
+@import "@styles/common.scss";
+
+// @include df_row(flex-end, center, 1rem, nowrap);
+// @include position(absolute, auto, 0, -0.5rem, 0);
+
+.nav {
+    @include position(fixed, 0, auto, auto, 0);
+    width: 100px;
+    height: 100%;
+    @include df_row(space-between, flex-start, 0.8rem, nowrap);
+    z-index: 1000;
+    // backdrop-filter: blur(13px);
+    // border: solid 1px black;
+    padding: 1rem;
+    transition: width 0.3s ease;
+    @include small-break {
+        width: 75px;
+    }
+    @include extra-small-break {
+        width: 65px;
+    }
+    &.expanded {
+        width: 100%;
+        backdrop-filter: blur(13px);
+    }
+    .con_0 {
+        @include df_column(space-between, center, 0.8rem, nowrap);
+        height: 100%;
+        width: 100px;
+        @include small-break {
+            width: 60px;
+        }
+        @include extra-small-break {
+            width: 50px;
+        }
+    }
+    .visible {
+        height: 100%;
+        transition: all 0.3s ease;
+        @include df_column(center, center, 0.8rem, nowrap);
+        .nav_item_com {
+            @include df_column(space-between, center, 0.8rem, nowrap);
+            .nav_items {
+                padding: 0.4rem 0.8rem;
+                // border: solid 1px var(--color-base-700);
+                border-radius: var(--border-radius--);
+                background-color: var(--color-base-200);
+                .nav_items_a {
+                    color: var(--color-base-900);
+                    // font-family: "Kimberly Signature", sans-serif;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                }
+                &:hover {
+                    background-color: var(--color-base-300);
+                }
+                @include small-break {
+                    &:hover {
+                        background-color: var(--color-base-300);
+                    }
+                }
+            }
+        }
+    }
+    .con_1 {
+        display: none;
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+    .con_2 {
+        display: none;
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .side_menu_toggle {
+        padding: 0rem 0.5rem;
+        // border: solid 1px black;
+
+        .toggle_btn {
+            padding: 0.7rem 0.5rem;
+            border-radius: calc(var(--border-radius--) * 1);
+            background-color: var(--color-base-200);
+            &:hover {
+                background-color: var(--color-base-300);
+                cursor: pointer;
+            }
+
+            p {
+                text-wrap: nowrap;
+                line-height: 3rem;
+                font-size: 6rem;
+                font-family: "Kimberly Signature", sans-serif;
+                color: var(--text--black-1);
+                @include small-break {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+
+    .social_media_con {
+        @include df_column(space-between, center, 0.5rem, nowrap);
+        margin-bottom: 1rem;
+        color: var(--text--black-1) !important;
+
+        a {
+            padding: 0.4rem;
+            border-radius: 50%;
+            &:hover {
+                background-color: var(--color-base-200);
+                cursor: pointer;
+            }
+        }
+    }
+}

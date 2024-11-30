@@ -1,0 +1,13 @@
+
+@import "@styles/common.scss";
+
+.main_con {
+    width: 100%;
+    color: black;
+    @include df_row(center, center, 0rem, nowrap); 
+    // border: black solid 1px;
+}
+.main_div {
+    width: 100%;
+    max-width: var(--page-max-width-1200--);
+}
