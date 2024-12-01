@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/kimberly-signature");
+@import "@styles/common.scss";
+
+// @include df_row(flex-end, center, 1rem, nowrap);
+// @include position(absolute, 0, auto, auto, 0);
+// @include position(relative, auto, auto, auto, auto);
+
+.aboutSection {
+    width: 100%;
+    // min-height: 98vh;
+    padding: 1rem;
+
+    background-color: var(--transparent);
+    @include df_row(center, center, 2.5rem, wrap);
+    @include large-break {
+        display: flex;
+        flex-direction:row-reverse;
+       
+   }
+    // border: solid 1px var(--color-base-600);
+    // transform: translateX(0) translateY(-100px);
+    // @include large-break {
+    //     transform: translateX(0) translateY(-40px);
+    // }
+    // @include mid-break {
+    //     transform: translateX(0) translateY(0);
+    // }
+
+    .about_header {
+        width: fit-content;
+        @include df_column(center, flex-start, 2.5rem, wrap);
+        // border: solid 1px var(--color-base-600);
+        @include large-break {
+            order: 2;
+        }
+       
+
+        .title {
+            p {
+                font-family: "Kimberly Signature", sans-serif;
+                font-size: 5rem;
+                font-weight: 900;
+                // line-height: 2rem;
+                color: var(--color-base-900);
+            }
+        }
+        .about_text_con {
+            max-width: 750px;
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            shape-outside: border-box;
+            p {
+                color: var(--color-base-800);
+                shape-outside: content-box;
+                @include large-break {
+                    text-align: center;
+                }
+            }
+        }
+        .hero_res_con {
+            width: 100%;
+            // max-height: 30px;
+            @include df_row(flex-end, center, 1rem, nowrap);
+            // border: solid 2px var(--color-base-200);
+            .resume_btn_con {
+                width: fit-content;
+                border: solid 2px var(--color-base-800);
+                background-color: var(--color-base-800);
+                border-radius: var(--border-radius--);
+                padding: 0.2rem 0.8rem;
+                p {
+                    color: var(--color-base-0);
+                    font-weight: 600;
+                }
+                &:hover {
+                    background-color: transparent;
+                    p {
+                        color: var(--color-base-800);
+                    }
+                }
+                // border: solid 2px var(--color-base-200);
+
+                .resume_button {
+                    width: fit-content;
+                    max-height: 23px;
+                    @include df_row(center, center, 0.4rem, nowrap);
+                    // border: solid 2px var(--color-base-200);
+                }
+            }
+            .contact_btn_con {
+                width: fit-content;
+                padding: 0.2rem 0.8rem;
+                border: solid 2px var(--color-base-800);
+                border-radius: var(--border-radius--);
+                p {
+                    color: var(--color-base-800);
+                }
+                .contact_button {
+                    max-height: 23px;
+                    @include df_row(center, center, 0.4rem, nowrap);
+                    // border: solid 2px var(--color-base-200);
+                }
+                &:hover {
+                    background-color: var(--color-base-800);
+                    p {
+                        color: var(--color-base-0);
+                    }
+                }
+            }
+            .hero_arrow {
+                font-family: "Kimberly Signature", sans-serif;
+                font-size: 2rem;
+
+                font-weight: lighter;
+                color: var(--color-base-800);
+            }
+        }
+    }
+    .about_text_img {
+        // border: solid 1px var(--color-base-600);
+        @include df_row(center, center, 2rem, wrap);
+        @include large-break {
+            order: 1;
+        }
+       
+        .hero_image_con {
+            @include position(relative, auto, auto, auto, auto);
+            z-index: 10;
+            // @include large-break {
+            //     display: none;
+            // }
+
+            .hero_image_con_ {
+                width: 100%;
+                max-width: 600px;
+                height: 100%;
+                content: url("/image/asset_3.webp"); // Light mode image
+                object-fit: cover;
+                object-position: top;
+
+                overflow: hidden;
+                // border: solid 2px var(--color-base-200);
+
+                filter: drop-shadow(2px 1px 8px rgba(0, 0, 0, 0.3));
+                transition:
+                    transform 0.3s ease,
+                    filter 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.01);
+                    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.5));
+                }
+
+                // Dark mode styling
+                :root[data-theme="dark"] & {
+                    content: url("/image/asset_3.webp"); // Dark mode image
+                    // border: solid 2px var(--color-base-700);
+
+                    // Adjust background for the `::before` element in dark mode
+                    .hero_image_con::before {
+                        background-color: var(--color-base-800);
+                    }
+                }
+            }
+        }
+    }
+}
