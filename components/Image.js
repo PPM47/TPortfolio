@@ -4,7 +4,7 @@ import React from "react";
 
 const Images = ({ imagess }) => {
   // Divide images into three groups (columns)
-  const columnCount = 4;
+  const columnCount = 3;
   const columns = Array.from({ length: columnCount }, () => []);
 
   imagess.forEach((image, index) => {

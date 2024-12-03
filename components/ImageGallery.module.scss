@@ -6,7 +6,7 @@
 // @include position(absolute, auto, 0, -0.5rem, 0);
 
 .img_gallery{
-    @include df_row(center, center, 0rem, wrap);
+    @include df_column(center, center, 0rem, wrap);
     .img_gallery_h1{
         font-family: "Kimberly Signature", sans-serif;
                 font-size: 5rem;

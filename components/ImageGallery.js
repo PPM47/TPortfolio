@@ -26,7 +26,7 @@ const ImageGallery = () => {
 
     return (
         <div className={classes.img_gallery}>
-            <h1 className={classes.img_gallery_h1}>{"- Image Gallery -"}</h1>
+            <h1 className={classes.img_gallery_h1}>{"- Art Gallery -"}</h1>
             <Image imagess={localImages} />
         </div>
     );

@@ -24,8 +24,8 @@ const ContactSection = () => {
               <p className={classes.arrow}>{"->"}</p>
             </div>
             <div className={classes.contact_info}>
-            <Link href="mailto:pavanmalshan114@gmail.com">
-                <p>pavanmalshan114@gmail.com</p>
+            <Link href="mailto:thuthiniisilva@gmail.com">
+                <p>thuthiniisilva@gmail.com</p>
               </Link>
             </div>
           </div>

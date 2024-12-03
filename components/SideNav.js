@@ -68,14 +68,14 @@ const SideNav = () => {
                     />
                   </Link>
 
-                  <Link href="https://github.com/PPM47">
+                  {/* <Link href="https://github.com/PPM47">
                     <Image
                       src="/image/gh-d.webp"
                       width={35}
                       height={35}
                       alt="GitHub"
                     />
-                  </Link>
+                  </Link> */}
 
                   <Link href="https://www.linkedin.com/in/pavan-malshan-50493920b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                     <Image
@@ -106,14 +106,14 @@ const SideNav = () => {
                     />
                   </Link>
 
-                  <Link href="https://github.com/PPM47">
+                  {/* <Link href="https://github.com/PPM47">
                     <Image
                       src="/image/gh-w.png"
                       width={35}
                       height={35}
                       alt="GitHub"
                     />
-                  </Link>
+                  </Link> */}
 
                   <Link href="https://www.linkedin.com/in/pavan-malshan-50493920b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                     <Image

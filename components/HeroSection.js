@@ -3,6 +3,7 @@ import React from "react";
 import classes from "@components/HeroSection.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -45,15 +46,13 @@ const HeroSection = () => {
             </div>
             <div className={classes.hero_res_con}>
               <div className={classes.resume_btn_con}>
-                <button
-                  className={classes.resume_button}
-                  onClick={() =>
-                    window.open("/files/PPavanMalshan.pdf", "_blank")
-                  }
-                >
-                  <p>Resume</p>
+                <div className={classes.resume_button}>
+                  <Link href="tel:+94772445114">
+                    <p>WhatsApp</p>
+                  </Link>
+
                   <p className={classes.hero_arrow}>{"->"}</p>
-                </button>
+                </div>
               </div>
               <div className={classes.contact_btn_con}>
                 <a className={classes.contact_button} href="#contactMe">

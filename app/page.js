@@ -5,8 +5,7 @@ import ImageGallery from "@components/ImageGallery";
 import AboutSection from "@components/AboutSection";
 import Skills from "@components/Skills";
 import ContactSection from "@components/ContactSection";
-import EducationSection from "@components/EducationSection";
-import ProjectSection from "@components/ProjectSection";
+
 import classes from "@app/Home.module.scss";
 import Gutter from "@components/gutter";
 
@@ -30,18 +29,13 @@ export default function Home() {
         <div className={classes.imageGallery}>
           <ImageGallery />
         </div>
-        <div className={classes.aboutSection}>
+        {/* <div className={classes.aboutSection}>
           <AboutSection />
         </div>
         <div className={classes.skillsSection}>
           <Skills />
-        </div>
-        <div className={classes.educationSection}>
-          <EducationSection />
-        </div>
-        <div className={classes.projectSection}>
-          <ProjectSection />
-        </div>
+        </div> */}
+  
         <div className={classes.contactSection}>
           <ContactSection />
         </div>
