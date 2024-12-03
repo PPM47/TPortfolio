@@ -11,7 +11,7 @@
     height: 100%;
     @include df_row(space-between, flex-start, 0.8rem, nowrap);
     z-index: 1000;
-    // backdrop-filter: blur(13px);
+    backdrop-filter: blur(0px);
     // border: solid 1px black;
     padding: 1rem;
     transition: width 0.3s ease;

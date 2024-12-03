@@ -16,7 +16,9 @@ const AboutSection = () => {
         > */}
         <div className={classes.about_header}>
           <div className={classes.title}>
-            <p>Where Charcoal Meets Soul</p>
+            <p>Where</p>
+            <p className={classes.title_s_p}>Charcoal</p>
+            <p>Meets Soul</p>
           </div>
           <div className={classes.about_text_con}>
             <p>

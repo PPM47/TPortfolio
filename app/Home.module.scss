@@ -15,6 +15,7 @@
     grid-template-areas:
         "nav_spaser heroSection"
         "nav_spaser charcoalSection"
+        "nav_spaser imageGallery"
         "nav_spaser aboutSection"
         "nav_spaser skillsSection"
         "nav_spaser educationSection"
@@ -77,6 +78,9 @@
     }
     .charcoalSection{
         grid-area: charcoalSection;
+    }
+    .imageGallery{
+        grid-area: imageGallery;
     }
     .aboutSection {
         grid-area: aboutSection;

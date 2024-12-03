@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/kimberly-signature");
+@import "@styles/common.scss";
+
+.img_main_con {
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; // Space between columns
+    padding: 2rem;
+   
+    @include extra-small-break {
+        padding: 1rem;
+    }
+}
+
+.img_col {
+    min-width: 300px;
+    flex: 1; // All columns take equal width
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    // border: solid 2px var(--color-base-800);
+    @include extra-small-break {
+        min-width: 280px;
+    }
+}
+
+.img_con {
+    position: relative;
+    overflow: hidden;
+    max-width: 450px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border: solid 2px var(--color-base-100);
+    backdrop-filter: blur(10px);
+    padding: .8rem;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.img_tag {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

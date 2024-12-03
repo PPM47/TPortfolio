@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroSection from "@components/HeroSection";
 import CharcoalSection from "@components/CharcoalSection"
+import ImageGallery from "@components/ImageGallery";
 import AboutSection from "@components/AboutSection";
 import Skills from "@components/Skills";
 import ContactSection from "@components/ContactSection";
@@ -25,6 +26,9 @@ export default function Home() {
         </div>
         <div className={classes.charcoalSection}>
           <CharcoalSection />
+        </div>
+        <div className={classes.imageGallery}>
+          <ImageGallery />
         </div>
         <div className={classes.aboutSection}>
           <AboutSection />
