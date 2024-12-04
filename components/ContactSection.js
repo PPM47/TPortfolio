@@ -9,13 +9,13 @@ const ContactSection = () => {
       <section className={classes.contactsSection}>
         <div className={classes.contacts_header}>
           <div className={classes.title}>
-            <p>Contact Me</p>
+            <p>- Contact Me -</p>
           </div>
-          <div className={classes.line_arrow}>
+          {/* <div className={classes.line_arrow}>
             <p>{"<"}</p>
             <div className={classes.line}></div>
             <p>{">"}</p>
-          </div>
+          </div> */}
         </div>
         <div className={classes.contacts_con}>
           <div className={classes.contact}>

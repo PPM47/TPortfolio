@@ -21,6 +21,7 @@
   --color-base-850: rgb(221, 221, 221);
   --color-base-900: rgb(255, 255, 255); /* Pure white */
   --color-base-df0: rgba(0, 0, 0, 0.446); 
+  --pricing--card--:rgba(20, 20, 20, 0.097);
   --text--black-1: rgb(243, 243, 243); 
   --transparent:rgba(0, 0, 0, 0);  /* White text for dark background */
 }
@@ -46,6 +47,7 @@
   --color-base-800: rgb(47, 47, 47);
   --color-base-850: rgb(34, 34, 34);
   --color-base-900: rgb(0, 0, 0); /* Pure black */
+  --pricing--card--:rgba(20, 20, 20, 0.097);
   --color-base-df0: rgba(255, 255, 255, 0.71); 
   --text--black-1: rgb(34, 34, 34); /* Black text for light background */
 }
@@ -72,6 +74,7 @@
   --color-base-850: rgb(221, 221, 221);
   --color-base-900: rgb(255, 255, 255); /* Pure white */
   --color-base-df0: rgba(0, 0, 0, 0.446); 
+  --pricing--card--:rgba(255, 255, 255, 0.173);
   --text--black-1: rgb(243, 243, 243); 
   --transparent:rgba(0, 0, 0, 0);  /* White text for dark background */
 }

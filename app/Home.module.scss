@@ -16,8 +16,7 @@
         "nav_spaser heroSection"
         "nav_spaser charcoalSection"
         "nav_spaser imageGallery"
-        "nav_spaser aboutSection"
-        "nav_spaser skillsSection"
+        "nav_spaser pricingSection"
         "nav_spaser contactSection"
         ;
 
@@ -79,6 +78,9 @@
     }
     .imageGallery{
         grid-area: imageGallery;
+    }
+    .pricingSection{
+        grid-area: pricingSection;
     }
     .aboutSection {
         grid-area: aboutSection;

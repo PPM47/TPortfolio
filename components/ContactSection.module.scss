@@ -17,7 +17,7 @@
     width: 100%;
     // min-height: 98vh;
     max-width: 800px;
-    padding: 1rem;
+    padding: 3rem 1rem;
     backdrop-filter: blur(10px);
     box-shadow: 0 1px 2px 0 rgba(98, 98, 98, 0.342);
     border-radius: var(--border-radius--);
@@ -35,8 +35,15 @@
             p {
                 font-family: "Kimberly Signature", sans-serif;
                 font-size: 5rem;
-                // line-height: 2rem;
-                color: var(--color-base-700);
+                font-weight: 900;
+                line-height: 2rem;
+                color: var(--color-base-900);
+                @include small-break {
+                    font-size: 4rem;
+                }
+                @include extra-small-break {
+                    font-size: 3.8rem;
+                }
             }
         }
         .line_arrow {

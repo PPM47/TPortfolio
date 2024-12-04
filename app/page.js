@@ -5,7 +5,7 @@ import ImageGallery from "@components/ImageGallery";
 import AboutSection from "@components/AboutSection";
 import Skills from "@components/Skills";
 import ContactSection from "@components/ContactSection";
-
+import Pricing from "@components/Pricing";
 import classes from "@app/Home.module.scss";
 import Gutter from "@components/gutter";
 
@@ -29,12 +29,12 @@ export default function Home() {
         <div className={classes.imageGallery}>
           <ImageGallery />
         </div>
-        {/* <div className={classes.aboutSection}>
+        {/* {/* <div className={classes.pricingSection}>
           <AboutSection />
-        </div>
-        <div className={classes.skillsSection}>
-          <Skills />
         </div> */}
+        <div className={classes.pricingSection}>
+          <Pricing />
+        </div> 
   
         <div className={classes.contactSection}>
           <ContactSection />

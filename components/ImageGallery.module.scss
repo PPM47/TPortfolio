@@ -9,10 +9,16 @@
     @include df_column(center, center, 0rem, wrap);
     .img_gallery_h1{
         font-family: "Kimberly Signature", sans-serif;
-                font-size: 5rem;
-
-                font-weight: lighter;
-                color: var(--color-base-900);
+        font-size: 5rem;
+        font-weight: 900;
+        line-height: 2rem;
+        color: var(--color-base-900);
+        @include small-break {
+            font-size: 4rem;
+        }
+        @include extra-small-break {
+            font-size: 3.8rem;
+        }
 
     }
 }
